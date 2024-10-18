@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c3a95f59f47aacf8af6d597c6917f851 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c3a95f59f47aacf8af6d597c6917f851" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c3a95f59f47aacf8af6d597c6917f851 = L.map(
+                "map_c3a95f59f47aacf8af6d597c6917f851",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6b3c07baf1d9dba277b0be472c01ad5b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6b3c07baf1d9dba277b0be472c01ad5b.addTo(map_c3a95f59f47aacf8af6d597c6917f851);
+        
+    
+            var marker_b080d346ccae44d7546e7c37b12c2af9 = L.marker(
+                [13.0878, 80.2785],
+                {}
+            ).addTo(map_c3a95f59f47aacf8af6d597c6917f851);
+        
+    
+            var icon_5af95deba40e06d3f1a39c4da8575f52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b080d346ccae44d7546e7c37b12c2af9.setIcon(icon_5af95deba40e06d3f1a39c4da8575f52);
+        
+    
+        var popup_8b2fa916bcb2cb4351a3800eb94410ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3945dda568b37e8e57ecdf38d2445c1 = $(`<div id="html_d3945dda568b37e8e57ecdf38d2445c1" style="width: 100.0%; height: 100.0%;"><strong>Chennai</strong><br>Temperature: 30.88°C<br>Description: Mist</div>`)[0];
+                popup_8b2fa916bcb2cb4351a3800eb94410ca.setContent(html_d3945dda568b37e8e57ecdf38d2445c1);
+            
+        
+
+        marker_b080d346ccae44d7546e7c37b12c2af9.bindPopup(popup_8b2fa916bcb2cb4351a3800eb94410ca)
+        ;
+
+        
+    
+    
+            var marker_309bbead70bba12cd82b6f8f9822afc8 = L.marker(
+                [12.9762, 77.6033],
+                {}
+            ).addTo(map_c3a95f59f47aacf8af6d597c6917f851);
+        
+    
+            var icon_1db22037e0cbf37b294bb23294551a14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_309bbead70bba12cd82b6f8f9822afc8.setIcon(icon_1db22037e0cbf37b294bb23294551a14);
+        
+    
+        var popup_6fba43ebbe8b6dfe79d11f99ff713cae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76867ce42557cd6f09bf9c544b6439de = $(`<div id="html_76867ce42557cd6f09bf9c544b6439de" style="width: 100.0%; height: 100.0%;"><strong>Bangalore</strong><br>Temperature: 26.96°C<br>Description: Overcast Clouds</div>`)[0];
+                popup_6fba43ebbe8b6dfe79d11f99ff713cae.setContent(html_76867ce42557cd6f09bf9c544b6439de);
+            
+        
+
+        marker_309bbead70bba12cd82b6f8f9822afc8.bindPopup(popup_6fba43ebbe8b6dfe79d11f99ff713cae)
+        ;
+
+        
+    
+    
+            var marker_be888e9ce13e65ced9408ed298b2cf85 = L.marker(
+                [22.5697, 88.3697],
+                {}
+            ).addTo(map_c3a95f59f47aacf8af6d597c6917f851);
+        
+    
+            var icon_6ad2cb030090f3194bba81a9d5590adf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be888e9ce13e65ced9408ed298b2cf85.setIcon(icon_6ad2cb030090f3194bba81a9d5590adf);
+        
+    
+        var popup_09c5ed446cc67afa097b90428acdcc50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d44c32be0ff82c3fcfecbe829cbd694 = $(`<div id="html_7d44c32be0ff82c3fcfecbe829cbd694" style="width: 100.0%; height: 100.0%;"><strong>Kolkata</strong><br>Temperature: 31.97°C<br>Description: Haze</div>`)[0];
+                popup_09c5ed446cc67afa097b90428acdcc50.setContent(html_7d44c32be0ff82c3fcfecbe829cbd694);
+            
+        
+
+        marker_be888e9ce13e65ced9408ed298b2cf85.bindPopup(popup_09c5ed446cc67afa097b90428acdcc50)
+        ;
+
+        
+    
+    
+            var marker_38eaca13e525f7f6f2c44661c8e0b187 = L.marker(
+                [17.3753, 78.4744],
+                {}
+            ).addTo(map_c3a95f59f47aacf8af6d597c6917f851);
+        
+    
+            var icon_fbd865d47d62eeb998926da2ec4fd9e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_38eaca13e525f7f6f2c44661c8e0b187.setIcon(icon_fbd865d47d62eeb998926da2ec4fd9e0);
+        
+    
+        var popup_f48bf97c204bdf744b25649ef00d31ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7cdf76db27bb776e19d6d063472676e = $(`<div id="html_d7cdf76db27bb776e19d6d063472676e" style="width: 100.0%; height: 100.0%;"><strong>Hyderabad</strong><br>Temperature: 29.23°C<br>Description: Haze</div>`)[0];
+                popup_f48bf97c204bdf744b25649ef00d31ef.setContent(html_d7cdf76db27bb776e19d6d063472676e);
+            
+        
+
+        marker_38eaca13e525f7f6f2c44661c8e0b187.bindPopup(popup_f48bf97c204bdf744b25649ef00d31ef)
+        ;
+
+        
+    
+    
+            var marker_7f5a07579f9084fac6d18cda0fe44a1e = L.marker(
+                [28.6667, 77.2167],
+                {}
+            ).addTo(map_c3a95f59f47aacf8af6d597c6917f851);
+        
+    
+            var icon_feb634889547362e1aa35409b7b77df2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7f5a07579f9084fac6d18cda0fe44a1e.setIcon(icon_feb634889547362e1aa35409b7b77df2);
+        
+    
+        var popup_0b9d0a63327f4a8ac2d298f24acabf7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e4636ddf6ce5f70b56252e1e4242806 = $(`<div id="html_5e4636ddf6ce5f70b56252e1e4242806" style="width: 100.0%; height: 100.0%;"><strong>Delhi</strong><br>Temperature: 34.05°C<br>Description: Haze</div>`)[0];
+                popup_0b9d0a63327f4a8ac2d298f24acabf7f.setContent(html_5e4636ddf6ce5f70b56252e1e4242806);
+            
+        
+
+        marker_7f5a07579f9084fac6d18cda0fe44a1e.bindPopup(popup_0b9d0a63327f4a8ac2d298f24acabf7f)
+        ;
+
+        
+    
+    
+            var marker_101e5be0dcdb70795588766133a9fca7 = L.marker(
+                [19.0144, 72.8479],
+                {}
+            ).addTo(map_c3a95f59f47aacf8af6d597c6917f851);
+        
+    
+            var icon_49368e555d7662069cd13c1b3a4ffc09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_101e5be0dcdb70795588766133a9fca7.setIcon(icon_49368e555d7662069cd13c1b3a4ffc09);
+        
+    
+        var popup_491671c4767d2c1c7962d4a1d14c134d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93d1a32e5563b5b61708bed56c577513 = $(`<div id="html_93d1a32e5563b5b61708bed56c577513" style="width: 100.0%; height: 100.0%;"><strong>Mumbai</strong><br>Temperature: 30.99°C<br>Description: Haze</div>`)[0];
+                popup_491671c4767d2c1c7962d4a1d14c134d.setContent(html_93d1a32e5563b5b61708bed56c577513);
+            
+        
+
+        marker_101e5be0dcdb70795588766133a9fca7.bindPopup(popup_491671c4767d2c1c7962d4a1d14c134d)
+        ;
+
+        
+    
+</script>
+</html>
