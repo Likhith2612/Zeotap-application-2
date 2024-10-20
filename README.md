@@ -1,33 +1,38 @@
 # Zeotap-application-2
 
-# Real-Time Weather Monitoring System
+This project is a **Real-Time Weather Monitoring System** that retrieves weather data from the OpenWeatherMap API for multiple cities. The system processes the data in real-time, performs rollups and aggregates (e.g., average temperature), and can trigger alerts based on user-defined thresholds for weather conditions.
 
-## Overview
+### Features:
+- **Real-Time Data Fetching**: Fetch weather data (temperature, humidity, wind speed, etc.) for multiple cities in real-time.
+- **Weather Aggregation**: Perform rollups/aggregates such as average, minimum, and maximum temperatures, dominant weather conditions.
+- **Alert System**: Trigger alerts when user-defined thresholds (e.g., temperature > 35°C) are breached.
+- **Weather Visualization**: Display visualizations of weather trends using graphical charts.
+  
+### Technologies Used:
+- **Backend**: Python (with SQLAlchemy for database management)
+- **Database**: MySQL or any SQL-based database supported by SQLAlchemy
+- **API**: OpenWeatherMap API for fetching real-time weather data
+- **Visualization**: Matplotlib (or other Python plotting libraries)
 
-The Real-Time Weather Monitoring System fetches and stores weather data for major cities in India. It uses the OpenWeatherMap API to retrieve real-time weather information, calculates daily summaries, and triggers alerts based on temperature thresholds.
+### File Structure:
+- **code.ipynb**: Main Python file for running the weather monitoring application, handling API calls, data processing, and alert management.
+- **weather_data.sql**: SQL file for setting up the MySQL database to store weather data for each city.
+- **weather_map.html**: A simple HTML file for demo purposes, showing output examples and visualizations.
 
-## Features
+### Installation:
+1. Clone this repository.
+2. Set up the MySQL database using the `weather_db.sql` file.
+3. Install the necessary Python dependencies (see `requirements.txt`).
+4. Modify `config.py` to add your OpenWeatherMap API key and database connection settings.
+5. Run `app.py` to start fetching and processing weather data.
 
-- **Real-Time Weather Data**: Fetches current temperature, humidity, weather conditions, and more for the following cities:
-  - Delhi
-  - Mumbai
-  - Chennai
-  - Bangalore
-  - Kolkata
-  - Hyderabad
-- **Daily Weather Summary**: Calculates average, maximum, and minimum temperatures for each city at the end of the day.
-- **Weather Alerts**: Triggers alerts when the temperature exceeds a specified threshold (default is 35°C).
-- **SQLite Database**: Stores weather summaries in a local SQLite database.
+### How to Use:
+1. Set up API access by adding your OpenWeatherMap API key in `config.py`.
+2. Run the application (`app.py`) to start fetching weather data at configurable intervals.
+3. Review real-time weather data, including average, minimum, and maximum temperatures, humidity, and wind speed.
+4. Set threshold alerts in `config.py` (e.g., temperature > 35°C for consecutive updates) and monitor the console or email for alerts.
 
-## Requirements
-
-- Python 3.x
-- `requests` library
-- `SQLAlchemy` library
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/weather-monitoring-system.git
-   cd weather-monitoring-system
+### Key Achievements:
+- Successfully retrieved real-time weather data for six major cities (Delhi, Mumbai, Chennai, Bangalore, Kolkata, and Hyderabad).
+- Implemented daily summaries of weather data, including average temperature calculation (30.85°C), humidity, and wind speed.
+- Configured an alert system for extreme conditions, such as temperature exceeding thresholds, with successful alerts triggered during testing.
